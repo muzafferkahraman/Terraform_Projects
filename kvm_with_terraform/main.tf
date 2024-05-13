@@ -1,11 +1,3 @@
-terraform {
-  required_providers {
-    libvirt = {
-      source = "dmacvicar/libvirt"
-    }
-  }
-} 
-
 # Configure the libvirt provider
 provider "libvirt" {
   uri = "qemu+ssh://${var.username}@${var.host}/system?keyfile=${var.ssh_key_path}"
