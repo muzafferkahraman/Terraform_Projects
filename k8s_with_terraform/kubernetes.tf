@@ -1,10 +1,3 @@
-terraform {
-  required_providers {
-    kubernetes = {
-      source = "hashicorp/kubernetes"
-    }
-  }
-}
 variable "host" {
   type = string
 }
